@@ -1,0 +1,91 @@
+body {
+    line-height: 1.75;
+    margin: 0;
+    padding: 0;
+}
+
+.grid {
+    display: grid;
+}
+
+.main-header {
+    /*min-height: 100vh;*/
+    background-color: honeydew;
+}
+
+.header-content {
+    align-content: center;
+    text-align: center;
+    /*set padding make sense for phones content not to be near the screen ends*/
+    padding: 20px 50px;
+    color: darkgoldenrod;
+}
+
+.header-content h1 {
+    font-size: 30px;
+    font-family: "Comic Sans MS", sans-serif;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.header-content .search-btn {
+    display: inline-block;
+    border: none;
+    color: #fff;
+    text-decoration: none;
+    background-color: salmon;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 2px;
+    text-align: center;
+    position: relative;
+    outline: none;
+    transition: background-color .1s ease;
+    cursor: pointer;
+}
+
+.header-content .search-btn::after {
+    transition: background-color .2s ease;
+    position: absolute;
+    content: '';
+    height: 4px;
+    bottom: 0;
+    width: 100%;
+    background-color: darksalmon;
+    opacity: .18;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    left: 0;
+}
+
+.header-content .search-btn:focus,
+.header-content .search-btn:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+.header-content .search-btn:hover {
+    background-color: lightsalmon;
+}
+
+.header-content .search-btn::after {
+    opacity: .22;
+}
+
+.header-content .search-btn:active {
+    background-color: darksalmon;
+}
+
+.header-content .search-btn::after {
+    opacity: .32
+}
+
+.header-content .seacrh-input {
+    padding: 8px 5px;
+    font-size: 13px;
+    font-weight: 600;
+    margin-right: 10px;
+    width: calc(100% - 130px);
+}
