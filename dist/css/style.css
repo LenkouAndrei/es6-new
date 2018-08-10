@@ -89,3 +89,29 @@ body {
     margin-right: 10px;
     width: calc(100% - 130px);
 }
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+    top: 0;
+    right: 10px;
+}
+
+.container span {
+    font-size: 17px;
+    color: white;
+}
+
+.author {
+    display: inline-block;
+    width: 100%;
+}
+
+.slider-container {
+    padding: 10px;
+    grid-template-columns:repeat(15, 1fr);
+    overflow: hidden;
+}
